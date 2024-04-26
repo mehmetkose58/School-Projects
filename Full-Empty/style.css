@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-color: #144fc6;
+    --fill-color: #6ab3f8;
+}
+
+body {
+    background-color: var(--border-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin: 5px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: white;
+    font-family: sans-serif;
+}
+
+.bottle {
+    margin: 20px;
+    width: 250px;
+    height: 450px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.bottle .full {
+    width: 240px;
+    background-color: #144fc6;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottle .empty {
+    width: 240px;
+    background-color: white;
+    text-align: center;
+    font-size: 24px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottles {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottles .glasses {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottles .glasses .glass {
+    width: 70px;
+    height: 100px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 14px;
+}
